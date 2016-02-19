@@ -18,6 +18,7 @@ var initDB = function (callbackGetDishesFromDB) {
   
     var username = objJSON.credentials.username;
     var password = objJSON.credentials.password;
+    //dishes is the db name;
     var dbDAO = new persistence(username, password, 'dishes');
     
     dbDAO.getDB(function(err, db) {
@@ -38,7 +39,7 @@ var initDB = function (callbackGetDishesFromDB) {
           });
         });
       } else {
-        console.log ('Database ja criado e populado');
+        console.log ('Database is already created and populated!');
         callbackGetDishesFromDB(dbDAO);
       }
       
@@ -56,7 +57,7 @@ var getDishesFromDB = function (dbDAO) {
       data.rows.forEach(function(doc) {
         dbDAO.readDocument(doc, function (err, data1){
           dbDAO.readDocWithAttachments(data1, function (err, data2) {
-              if (err) console.log('ERRO Reading Attachments: ', err);
+              if (err) console.log('ERROR when reading attachments: ', err);
               data1.image = 'data:image/png;base64,' + data2.toString('ascii');
               console.log(data1);
               dishesArray.push(data1);
