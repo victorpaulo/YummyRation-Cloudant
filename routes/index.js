@@ -90,7 +90,7 @@ exports.home = function(req, res) {
    res.render('home');
 };
 
-// Render the Home page
+//Added this router passing dishesArray to populate the home page from Cloudant data
 exports.home2 = function(req, res) {
     res.render('home2', {listDishes:  dishesArray});
 };
