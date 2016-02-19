@@ -5,7 +5,7 @@ Online Catering Services (http://yummyration.mybluemix.net/).
 
 **This version I added the IBM Cloudant No-SQL database functionality**
 
-**You must have provision an instance of IBM Cloudant on BlueMix**
+**You must have to provision an instance of IBM Cloudant on BlueMix and inform the credentials on file cloudant.json**
 
 **Please see the documentation:** https://www.ng.bluemix.net/docs/#services/Cloudant/index.html#Cloudant
  
