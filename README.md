@@ -14,7 +14,7 @@ OVERVIEW
 
 > Link: https://hub.jazz.net/project/jlmarech/YummyRation/overview
 
-Online Catering Services (http://yummyration.mybluemix.net/).  
+##Online Catering Services (http://yummyration.mybluemix.net/).  
 
 The web app is an online catalog. It displays menu items (fresh cooked dishes), with pictures, description, price, and customer rating
 The app also expose YummyRation data through public APIs (REST API).
