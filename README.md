@@ -38,8 +38,11 @@ Licensed under the MIT license: http://opensource.org/licenses/MIT
 `git clone https://github.com/victorpaulo/YummyRation-Cloudant.git`
 
 -Install the dependencies
+
 `cd YummyRation-Cloudant`
+
 `npm install`
 
 -Run the node application
+
 `node app.js`
