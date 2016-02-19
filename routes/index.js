@@ -1,7 +1,7 @@
 /*jslint node:true*/
 
 var dishes = require('./dishes.js');
-var persistence = require('../cloudant.js');
+var persistence = require('../cloudant/cloudant.js');
 var fs = require('fs');
 var path = require('path');
 var dishesArray = [];
@@ -10,7 +10,7 @@ var ok = false;
 //BEGIN: Cloudant section 
 //function to populate the database with the images and dishes data
 var initDB = function (callbackGetDishesFromDB) {
-  var fileJSON = path.join(__dirname, '/../cloudant.json');
+  var fileJSON = __dirname + '/../cloudant/cloudant.json';
   fs.readFile(fileJSON, 'utf8', function (err, data) {
     if (err) 
       throw err;
@@ -32,14 +32,14 @@ var initDB = function (callbackGetDishesFromDB) {
               dbDAO.insertDocWithAttachments(dish, objAttachment, function(err, data) {
                 if (err) 
                   console.log(err);     
-                callbackGetDishesFromDB();
+                callbackGetDishesFromDB(dbDAO);
               });
             });
           });
         });
       } else {
         console.log ('Database ja criado e populado');
-        callbackGetDishesFromDB();
+        callbackGetDishesFromDB(dbDAO);
       }
       
     });
@@ -48,19 +48,8 @@ var initDB = function (callbackGetDishesFromDB) {
 }
 
 //function to retrieve dishes from Cloudant
-var getDishesFromDB = function () {
-  var fileJSON = path.join(__dirname, '/../cloudant.json');
-  
-  fs.readFile(fileJSON, 'utf8', function (err, data) {
-    if (err) 
-      throw err;
-    var objJSON = JSON.parse(data);
-  
-    var username = objJSON.credentials.username;
-    var password = objJSON.credentials.password;
-    var dbDAO    = new persistence(username, password, 'dishes');
-    
-    dbDAO.listDocs(function(err, data) {
+var getDishesFromDB = function (dbDAO) {
+  dbDAO.listDocs(function(err, data) {
       if (err) {
           console.log('ERRO: ', err);
       }
@@ -76,8 +65,8 @@ var getDishesFromDB = function () {
         });
       }); 
       
-    });
-  }); 
+  });
+
 }
 
 if (!ok) {
