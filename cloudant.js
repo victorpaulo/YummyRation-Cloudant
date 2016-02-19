@@ -1,3 +1,4 @@
+//@author: Victor Paulo Almeida
 var path = require('path');
 var fs = require('fs');
 var Cloudant = require('cloudant');
