@@ -9,8 +9,10 @@ OVERVIEW
 **Please see the documentation:** https://www.ng.bluemix.net/docs/#services/Cloudant/index.html#Cloudant
 
 **Credits**
-Owner code: *jlmarech*
-Link: https://hub.jazz.net/project/jlmarech/YummyRation/overview
+
+> Owner code: *jlmarech*
+
+> Link: https://hub.jazz.net/project/jlmarech/YummyRation/overview
 
 Online Catering Services (http://yummyration.mybluemix.net/).  
 
