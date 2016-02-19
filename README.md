@@ -34,7 +34,7 @@ Licensed under the MIT license: http://opensource.org/licenses/MIT
 
 ##How to run this sample
 
-- Clone the repository
+- Clone the following repository on your desired workspace
 
 `git clone https://github.com/victorpaulo/YummyRation-Cloudant.git`
 
