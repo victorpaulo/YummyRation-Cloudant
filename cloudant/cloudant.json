@@ -1,9 +1,9 @@
 {
   "credentials": {
-    "username": "2987ffa7-56ae-4ba4-82e4-25a340f8048b-bluemix",
-    "password": "9d7363b5adc9bd653a972561e4f052a76d260eb5e9bae22b56402e64d8d2a15d",
-    "host": "2987ffa7-56ae-4ba4-82e4-25a340f8048b-bluemix.cloudant.com",
+    "username": "xxxxxxxx-bluemix",
+    "password": "yyyyyyyyyyyy",
+    "host": "hostname-bluemix.cloudant.com",
     "port": 443,
-    "url": "https://2987ffa7-56ae-4ba4-82e4-25a340f8048b-bluemix:9d7363b5adc9bd653a972561e4f052a76d260eb5e9bae22b56402e64d8d2a15d@2987ffa7-56ae-4ba4-82e4-25a340f8048b-bluemix.cloudant.com"
+    "url": "https://xxxxxx-bluemix:yyyyyy@hostname-bluemix.cloudant.com"
   }
 }
