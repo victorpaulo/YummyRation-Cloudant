@@ -40,9 +40,7 @@ Licensed under the MIT license: http://opensource.org/licenses/MIT
 
 - Install the dependencies
 
-`cd YummyRation-Cloudant`
-
-`npm install`
+`cd YummyRation-Cloudant && npm install`
 
 - Run the node application
 
