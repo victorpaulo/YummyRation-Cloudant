@@ -7,6 +7,8 @@ var path = require('path');
 var dishesArray = [];
 var ok = false;
 
+//BEGIN: Cloudant section 
+//function to populate the database with the images and dishes data
 var initDB = function (callbackGetDishesFromDB) {
   var fileJSON = path.join(__dirname, '/../cloudant.json');
   fs.readFile(fileJSON, 'utf8', function (err, data) {
@@ -45,6 +47,7 @@ var initDB = function (callbackGetDishesFromDB) {
   
 }
 
+//function to retrieve dishes from Cloudant
 var getDishesFromDB = function () {
   var fileJSON = path.join(__dirname, '/../cloudant.json');
   
@@ -80,6 +83,7 @@ var getDishesFromDB = function () {
 if (!ok) {
   initDB(getDishesFromDB);
 }
+//END: Cloudant section
 
 // Render the Home page
 exports.home = function(req, res) {
