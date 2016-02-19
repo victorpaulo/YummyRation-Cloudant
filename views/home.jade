@@ -1,0 +1,31 @@
+extends layout
+
+block header
+	include header
+	
+block content
+	div.container-fluid
+		div.jumbotron
+			h1.text-center Welcome to YummyRation!
+			p.lead.text-center
+				| We deliver delicious fresh cooked food for your next dinner, cocktail, or party.
+		.row.marketing
+			.col-md-6.col-sm-6.col-xs-6
+			
+				h3.text-center Salads
+				p.text-center
+					a(href='/menuitem/v101')
+						img.img-circle(src='/images/salad.jpg' alt'salad pic' height='140', width='140')
+				h3.text-center Seafood
+				p.text-center
+					a(href='/menuitem/s202')
+						img.img-circle(src='/images/seafood.jpg' alt'seefood pic' height='140', width='140')
+			.col-md-6.col-sm-6.col-xs-6
+				h3.text-center Meat
+				p.text-center
+					a(href='/menuitem/m303')
+						img.img-circle(src='/images/steak.jpg' alt'meat pic' height='140', width='140')
+				h3.text-center Desserts
+				p.text-center
+					a(href='/menuitem/d404')
+						img.img-circle(src='/images/raspie.jpg' alt'dessert pic' height='140', width='140')

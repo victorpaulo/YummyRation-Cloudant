@@ -1,0 +1,24 @@
+extends layout
+
+block header
+	include header-details
+	
+	
+block content
+	div.container
+		h2
+			| #{item.category}   
+			span.glyphicon.glyphicon-chevron-right
+			|   #{item.name}
+		br
+		img.img-responsive(src='#{item.image}' height='375', width='500')
+		
+		h3
+			| Description:	
+		h4
+			| #{item.description}
+		h3
+			| Price: #{item.price}
+		h3
+			| Customer Rating : #{item.rating} 
+			span.glyphicon.glyphicon-star

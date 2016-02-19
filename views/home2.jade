@@ -1,0 +1,20 @@
+extends layout
+
+block header
+	include header
+	
+block content
+	div.container-fluid
+		div.jumbotron
+			h1.text-center Welcome to YummyRation v2!
+			p.lead.text-center
+				| We deliver delicious fresh cooked food for your next dinner, cocktail, or party.
+		.row.marketing
+		each dish in listDishes
+			.col-md-6.col-sm-6.col-xs-6
+			
+				h3.text-center #{dish.category}
+				p.text-center
+					a(href='/menuitem/#{dish.objectId}')
+						img.img-circle(src='#{dish.image}' alt'#{dish.description}' height='140', width='140')
+				
