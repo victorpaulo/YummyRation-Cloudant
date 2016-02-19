@@ -10,7 +10,7 @@ OVERVIEW
 
 **Credits**
 
-> Owner original code: *jlmarech*
+> Original code owner: *jlmarech*
 
 > Link: https://hub.jazz.net/project/jlmarech/YummyRation/overview
 
