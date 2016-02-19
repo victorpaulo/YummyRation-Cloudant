@@ -1,0 +1,9 @@
+{
+  "credentials": {
+    "username": "xxxxxxxx-bluemix",
+    "password": "yyyyyyyyyyyy",
+    "host": "hostname-bluemix.cloudant.com",
+    "port": 443,
+    "url": "https://xxxxxx-bluemix:yyyyyy@hostname-bluemix.cloudant.com"
+  }
+}
