@@ -4,7 +4,7 @@
 
 **This version I added the IBM Cloudant No-SQL database functionality**
 
-**You must have to provision an instance of IBM Cloudant on BlueMix and inform the credentials on file _cloudant.json_**
+**You must have to provision an instance of IBM Cloudant on Bluemix and inform the credentials on file _cloudant.json_**
 
 **Please see the documentation:** https://www.ng.bluemix.net/docs/#services/Cloudant/index.html#Cloudant
 
